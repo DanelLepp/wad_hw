@@ -1,13 +1,9 @@
 body {
     font-family: Arial;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
     background: deepskyblue;
-
 }
 header {
-    padding: 30px;
-    font-size: 40px;
     text-align: center;
     background: white;
 }
@@ -17,6 +13,7 @@ section {
     width: 50%;
     flex-flow: column;
     margin: 0 auto;
+    background: #e0e0e0;
 }
 nav {
     display: flex;
@@ -27,8 +24,6 @@ nav {
 }
 
 nav div {
-    height: 30px;
-    flex-grow: 4;
     padding: 10px;
 }
 nav div.search-container > input {
@@ -51,10 +46,13 @@ nav div.search-container > button {
     background-color: deepskyblue;
 }
 
-.column {
-    width: 100%;
+h5{
+    text-align: right;
+    color: dimgrey;
 }
-
+p{
+    font-size: xx-large;
+}
 /* Fake image */
 .fakeimg {
     background-color: #aaa;
@@ -64,7 +62,9 @@ nav div.search-container > button {
 
 /* Add a card effect for articles */
 .card {
+    width: 80%;
+    border: 1px solid dimgrey;
     background-color: white;
     padding: 20px;
-    margin-top: 20px;
+    margin: 20px auto 0;
 }
