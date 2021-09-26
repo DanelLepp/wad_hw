@@ -1,0 +1,46 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0%;
+}
+
+nav {
+    display: flex;
+    background-color: #ffffff;
+    align-items: center;
+}
+
+nav div {
+    height: 30px;
+    flex-grow: 4;
+    padding: 10px;
+}
+nav div.search-container > input {
+    box-sizing: border-box;
+    height: 30px;
+    width: 40%;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid #e0e0e0;
+}
+
+nav div.search-container > button {
+    box-sizing: border-box;
+    height: 30px;
+    width: 10%;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+    background-color: #e0e0e0;
+}
