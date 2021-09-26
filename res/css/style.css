@@ -1,23 +1,29 @@
-* {
-    font-family: 'Open Sans', sans-serif;
-}
-
-html, body {
-    width: 50%;
+body {
+    font-family: Arial;
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7;
+    background: deepskyblue;
+
 }
 header {
-    position: fixed;
-    width: 100%;
-    top: 0%;
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
 }
 
+section {
+    display: flex;
+    width: 50%;
+    flex-flow: column;
+    margin: 0 auto;
+}
 nav {
     display: flex;
+    width: 50%;
+    flex-flow: column;
+    margin: 0 auto;
     background-color: #ffffff;
-    align-items: center;
 }
 
 nav div {
@@ -28,7 +34,7 @@ nav div {
 nav div.search-container > input {
     box-sizing: border-box;
     height: 30px;
-    width: 40%;
+    width: 80%;
     margin: 0;
     padding: 5px;
     border: 1px solid #e0e0e0;
@@ -37,10 +43,28 @@ nav div.search-container > input {
 nav div.search-container > button {
     box-sizing: border-box;
     height: 30px;
-    width: 10%;
+    width: 20%;
     margin: 0;
     padding: 5px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid deepskyblue;
     cursor: pointer;
-    background-color: #e0e0e0;
+    background-color: deepskyblue;
+}
+
+.column {
+    width: 100%;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 80%;
+    padding: 10%;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
 }
