@@ -1,5 +1,5 @@
 body {
-    font-family: Arial;
+    font-family: Arial, serif;
     margin: 0 auto;
     background: deepskyblue;
 }
@@ -26,7 +26,7 @@ nav {
 nav div {
     padding: 10px;
 }
-nav div.search-container > input {
+#searchInput {
     box-sizing: border-box;
     height: 30px;
     width: 80%;
@@ -35,7 +35,7 @@ nav div.search-container > input {
     border: 1px solid #e0e0e0;
 }
 
-nav div.search-container > button {
+#searchButton {
     box-sizing: border-box;
     height: 30px;
     width: 20%;
@@ -45,12 +45,38 @@ nav div.search-container > button {
     cursor: pointer;
     background-color: deepskyblue;
 }
+#searchButton:hover {
+    background: lightskyblue;
 
-h5{
+}
+
+Button {
+    box-sizing: border-box;
+    height: 30px;
+    width: 40px;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid deepskyblue;
+    cursor: pointer;
+    background-color: deepskyblue;
+}
+button:hover{
+    background-color: yellow;
+}
+
+/* date headline */
+div > h5{
     text-align: right;
     color: dimgrey;
 }
-p{
+
+/* large text after picture*/
+h5 ~ p{
+    font-size: large;
+}
+
+/* if no picture exxtra large text*/
+h5 + p{
     font-size: xx-large;
 }
 /* Fake image */
