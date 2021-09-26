@@ -1,11 +1,15 @@
+/*https://coolors.co/0b2027-40798c-70a9a1-cfd7c7-f6f1d1*/
+
 body {
     font-family: Arial, serif;
     margin: 0 auto;
-    background: deepskyblue;
+    padding: 0;
+    background: #0b2027;
+
 }
 header {
     text-align: center;
-    background: white;
+    background: #40798c;
 }
 
 section {
@@ -15,12 +19,13 @@ section {
     margin: 0 auto;
     background: #e0e0e0;
 }
+
 nav {
     display: flex;
     width: 50%;
     flex-flow: column;
     margin: 0 auto;
-    background-color: #ffffff;
+    background-color: 40798c;
 }
 
 nav div {
@@ -32,7 +37,8 @@ nav div {
     width: 80%;
     margin: 0;
     padding: 5px;
-    border: 1px solid #e0e0e0;
+    border: none;
+    background-color: #cfd7c7;
 }
 
 #searchButton {
@@ -41,9 +47,33 @@ nav div {
     width: 20%;
     margin: 0;
     padding: 5px;
-    border: 1px solid deepskyblue;
+    border: none;
     cursor: pointer;
-    background-color: deepskyblue;
+    background-color: #70a9a1;
+}
+
+#searchButton:hover {
+    opacity: 0.7;
+}
+
+Button {
+    box-sizing: border-box;
+    height: 30px;
+    width: 40px;
+    margin: 0;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #70a9a1;
+}
+button:hover{
+    opacity: 0.7;
+}
+
+/* date headline */
+div > h5{
+    text-align: right;
+    color: dimgrey;
 }
 #searchButton:hover {
     background: lightskyblue;
@@ -79,6 +109,11 @@ h5 ~ p{
 h5 + p{
     font-size: xx-large;
 }
+
+/* if no picture exxtra large text*/
+h5 + p{
+    font-size: xx-large;
+}
 /* Fake image */
 .fakeimg {
     background-color: #aaa;
@@ -88,9 +123,40 @@ h5 + p{
 
 /* Add a card effect for articles */
 .card {
-    width: 80%;
-    border: 1px solid dimgrey;
-    background-color: white;
+    background-color: #cfd7c7;
     padding: 20px;
-    margin: 20px auto 0;
+    margin-top: 20px;
 }
+
+form {   
+    
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+ }   
+input[type=text], input[type=password] {   
+    width: 100%;   
+    margin: 8px 0;  
+    padding: 12px 20px;   
+    display: inline-block;   
+    border: none;   
+    box-sizing: border-box;   
+}  
+
+input[type=submit] {   
+    width: 20%;   
+    margin: 8px 0;  
+    padding: 12px 20px;   
+    vertical-align: center;
+    border: none;   
+}  
+
+input:hover {   
+     opacity: 0.7;   
+}      
+     
+.login-form {   
+    background-color: #cfd7c7;
+    padding: 20px;
+    margin-top: 20px;
+}   
