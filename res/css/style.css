@@ -22,14 +22,30 @@ section {
 
 nav {
     display: flex;
-    width: 50%;
-    flex-flow: column;
-    margin: 0 auto;
-    background-color: 40798c;
+    flex-flow: row;
+    margin: auto;
+    background-color: #40798c;
+}
+nav div {
+    /*padding: 10px; */
+}
+img {
+    width: 100%;
+    margin: auto;
 }
 
-nav div {
-    padding: 10px;
+
+/***** search bar *****/
+#settings{
+    width: 25%;
+}
+#search-container {
+    width: 50%;
+    margin: auto;
+}
+
+#useraccount{
+    width: 25%;
 }
 #searchInput {
     box-sizing: border-box;
@@ -40,7 +56,6 @@ nav div {
     border: none;
     background-color: #cfd7c7;
 }
-
 #searchButton {
     box-sizing: border-box;
     height: 30px;
@@ -51,9 +66,14 @@ nav div {
     cursor: pointer;
     background-color: #70a9a1;
 }
-
 #searchButton:hover {
     opacity: 0.7;
+}
+#useraccount .thumbnail {
+    margin-left: 80%;
+}
+#settings .thumbnail {
+    margin-right: 80%;
 }
 
 Button {
@@ -114,11 +134,9 @@ h5 + p{
 h5 + p{
     font-size: xx-large;
 }
-/* Fake image */
-.fakeimg {
-    background-color: #aaa;
-    width: 80%;
-    padding: 10%;
+.thumbnail{
+    height: 60px;
+    width: 70px;
 }
 
 /* Add a card effect for articles */
@@ -128,6 +146,7 @@ h5 + p{
     margin-top: 20px;
 }
 
+
 form {   
     
     display: flex;
@@ -136,20 +155,20 @@ form {
  }   
 input[type=text], input[type=password] {   
     width: 100%;   
-    margin: 8px 0;  
-    padding: 12px 20px;   
-    display: inline-block;   
+    margin: 8px 0;
+    padding: 12px 20px;
+    display: inline-block;
     border: none;   
     box-sizing: border-box;   
 }  
 
 input[type=submit] {   
     width: 20%;   
-    margin: 8px 0;  
-    padding: 12px 20px;   
+    margin: 8px 0;
+    padding: 12px 20px;
     vertical-align: center;
     border: none;   
-}  
+}
 
 input:hover {   
      opacity: 0.7;   
@@ -158,5 +177,6 @@ input:hover {
 .login-form {   
     background-color: #cfd7c7;
     padding: 20px;
-    margin-top: 20px;
-}   
+    margin: 20px;
+}
+
