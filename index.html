@@ -5,35 +5,31 @@
     <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="res/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="res/js/script.js"></script>
 </head>
 <body>
 <header class="header">
     <nav>
-        <div class="search-container">
+        <div id="settings">
+            <img src="res/images/folder.png" class="thumbnail">
+        </div>
+        <div id="search-container">
             <input type="text" id="searchInput"><button id="searchButton">Search</button>
         </div>
-        <div></div>
+        <div id="useraccount" class="dropdown">
+            <img src="res/images/user.png" class="thumbnail" onclick='dropDown()'>
+            <div id="dropDownMenu" class="dropdown-content">
+              <a>John Wick</a>
+              <a>john@wick.com</a>
+            </div>
+        </div>
     </nav>
 </header>
-
 <section>
-    <div class="card">
-        <h5>26.09.2021</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
-        <p>I think it is going to rain</p>
-        <button>Like</button>
-    </div>
-    <div class="card">
-        <h5>26.09.2021</h5>
-        <p>Which weights more, a pound of bricks or a pound of feathers.</p>
-        <button>Like</button>
-    </div>
-    <div class="card">
-        <h5>26.09.2021</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
-        <p>Felt cute, might delete later</p>
-        <button>Like</button>
-    </div>
+    <!--
+    json validated with https://jsonlint.com/
+    -->
 </section>
 </body>
 </html>
