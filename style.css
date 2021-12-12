@@ -1,0 +1,140 @@
+/*https://coolors.co/0b2027-40798c-70a9a1-cfd7c7-f6f1d1*/
+
+body {
+    font-family: Arial, serif;
+    margin: 0 auto;
+    padding: 0;
+    background: #0b2027;
+
+}
+header {
+    text-align: center;
+    background: #40798c;
+}
+h1 {
+    text-align: center;
+    margin:auto;
+    font-family: Arial, serif;
+    background: #40798c;
+}
+
+section {
+    display: flex;
+    width: 50%;
+    flex-flow: column;
+    margin: 0 auto;
+    background: #e0e0e0;
+}
+
+nav {
+    font-family: Arial, serif;
+    display: flex;
+    flex-flow: row;
+    margin: auto;
+    background-color: #40798c;
+}
+footer {
+    text-align: center;
+    font-family: Arial, serif;
+    display: flex;
+    flex-flow: row;
+    margin: auto;
+    background-color: #40798c;
+}
+
+.navlinks {
+    margin:auto;
+    color: dimgrey;
+    font-size: large;
+}
+
+img {
+    width: 100%;
+    margin: auto;
+}
+
+
+#likeButton {
+    box-sizing: border-box;
+    height: 30px;
+    width: 60px;
+    margin: 0;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #70a9a1;
+}
+button:hover{
+    opacity: 0.7;
+}
+
+/* title  */
+h5{
+    text-align: left;
+    color: dimgrey;
+    font-size: large;
+}
+
+/* large text after picture*/
+p{
+    font-family: Arial, serif;
+    color: dimgrey;
+}
+A {
+    text-decoration: none;
+}
+.delete {
+    width: 20%;   
+    margin: auto;
+    padding: 12px 20px;
+    vertical-align: center;
+    border: none;   
+}
+
+.thumbnail{
+    height: 60px;
+    width: 70px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: #cfd7c7;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+form {   
+    
+    justify-content: center;
+    align-items: center; 
+ }   
+input[type=text], input[type=password] {   
+    width: 100%;   
+    margin: 8px 0;
+    padding: 12px 20px;
+    border: none;   
+    box-sizing: border-box;   
+}  
+
+.submit {   
+    width: 20%;   
+    margin: 8px 0;
+    padding: 12px 20px;
+    vertical-align: center;
+    border: none;   
+}
+
+input:hover {   
+     opacity: 0.7;   
+}
+
+label {
+    font-family: Arial, serif;
+}
+     
+.create-post {   
+    background-color: #cfd7c7;
+    padding: 20px;
+    margin: 20px;
+}

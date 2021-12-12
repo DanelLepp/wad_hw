@@ -1,0 +1,32 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Posts</title>
+  </head>
+  <body>
+    <h1>Posts page</h1>
+    <%- include('./partials/navbar.ejs') %>
+    <section>
+    <div class="posts list">
+      <h2>All posts</h2>
+      <% if (posts.length > 0) { %> <% posts.forEach(post => { %>
+      <div class="card">
+      <a href="/singlepost/<%= post.id %>">
+        <h5 class="title"><%= post.title %></h5>
+        <img src="<%= post.urllink %>" alt="image">
+        <p class="body"><%= post.body %></p>
+      </a>
+      <button id="likeButton"> Like <%= post.likes %></button>
+    </div>
+      <% }) %> <% } else { %>
+      <p>You did not post anything...</p>
+      <% } %>
+    </div>
+  </section>
+  
+    <%- include('./partials/footer.ejs') %>
+  </body>
+</html>
