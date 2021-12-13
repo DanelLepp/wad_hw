@@ -76,19 +76,19 @@ app.post("/posts", async (req, res) => {
     console.error(err.message);
   }
 });
-app.put('/posts/:id', async(req, res) => {
+app.post("/posts/:id", async (req, res) => {
   try {
-  const { id } = req.params;
-  const post = req.body;
-  console.log("update request has arrived");
-  const updatepost = await pool.query(
-  "UPDATE nodetable SET (title, body, urllink, likes) = ($2, $3, $4, $5) WHERE id = $1", [post.title, post.body, post.urllink, post.likes]
-  );
-  res.json(post);
-  } catch (err) {
-  console.error(err.message);
-  }
- });
+    const { id } = req.params;
+    console.log("update request has arrived");
+    const updatepost = await pool.query(
+    "UPDATE nodetable SET likes = $2 WHERE id = $1", [id, 1]
+    );
+    res.redirect("posts");
+    console.log("update request handled");
+    } catch (err) {
+    console.error(err.message);
+    }
+});
 app.get("/create", (req, res) => {
   res.render("create");
 });

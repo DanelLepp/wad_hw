@@ -19,7 +19,10 @@
         <img src="<%= post.urllink %>" alt="image">
         <p class="body"><%= post.body %></p>
       </a>
-      <button id="likeButton"> Like <%= post.likes %></button>
+      
+      <form action="/posts/<%= post.id %>">
+        <button type="submit" formmethod="post">Like <%= post.likes %></button>
+      </form>
     </div>
       <% }) %> <% } else { %>
       <p>You did not post anything...</p>
